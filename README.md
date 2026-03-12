@@ -14,7 +14,11 @@
 <img width="789" height="478" alt="image" src="https://github.com/user-attachments/assets/5174730f-e738-4d03-b0f3-2a1429dde97d" />
 <img width="786" height="473" alt="image" src="https://github.com/user-attachments/assets/9e7ba738-e1ae-4c48-bbde-314d10ba8fee" />
 
+-4단계 스크린샷
+<img width="783" height="473" alt="image" src="https://github.com/user-attachments/assets/43217cae-2744-4a74-b83a-925bbbc07dd5" />
+버튼 배치는 완료했으나 catch! 버튼이 도망을 가지 않는 버그 발생
 
 ## 구현 시 어려웠던 점
-2단계 사운드 추가에서 오류가 자주 발생하여 구현이 어려웠습니다.
-Github의 커밋 오류와 copilot 연동 오류가 발생하여 급하게 제작하느라 어려웠습니다.
+-2단계 사운드 추가에서 오류가 자주 발생하여 구현이 어려웠습니다.
+-Github의 커밋 오류와 copilot 연동 오류가 발생하여 급하게 제작하느라 어려웠습니다.
+-4단계 구성 중 버튼을 추가한 후 catch! 버튼이 도망가지 않아 코드를 재수정하는데 어려움을 겪었습니다.
