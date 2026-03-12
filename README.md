@@ -6,16 +6,23 @@
 
 # 실행 화면
 -1단계 스크린샷
+
 <img width="780" height="450" alt="image" src="https://github.com/user-attachments/assets/3f8b5591-4480-42ca-b1f0-f3905b40a955" />
+
 <img width="790" height="476" alt="image" src="https://github.com/user-attachments/assets/432eb070-237e-4511-a234-89d672e2c05e" />
+
 -2단계 스크린샷
 
 -3단계 스크린샷
+
 <img width="789" height="478" alt="image" src="https://github.com/user-attachments/assets/5174730f-e738-4d03-b0f3-2a1429dde97d" />
+
 <img width="786" height="473" alt="image" src="https://github.com/user-attachments/assets/9e7ba738-e1ae-4c48-bbde-314d10ba8fee" />
 
 -4단계 스크린샷
+
 <img width="783" height="473" alt="image" src="https://github.com/user-attachments/assets/43217cae-2744-4a74-b83a-925bbbc07dd5" />
+
 버튼 배치는 완료했으나 catch! 버튼이 도망을 가지 않는 버그 발생
 
 ## 구현 시 어려웠던 점
