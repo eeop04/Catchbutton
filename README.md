@@ -33,3 +33,74 @@
 
 -4단계 구성 중 버튼을 추가한 후 catch! 버튼이 도망가지 않아 코드를 재수정하는데 어려움을 겪었습니다.
 
+-Github에 커밋이 안되어 코드를 올립니다.
+
+using System;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace Catchbutton
+{
+    public partial class Form1 : Form
+    {
+        Random rd = new Random();
+        int catchCount = 0;
+        int missCount = 0;
+
+        public Form1()
+        {
+            InitializeComponent();
+
+            CatchBtn.Click += CatchBtn_Click;
+            CatchBtn.MouseEnter += CatchBtn_MouseEnter;
+        }
+
+        private void CatchBtn_Click(object sender, EventArgs e)
+        {
+            catchCount++;
+
+            if (catchCount >= 20)
+            {
+                MessageBox.Show("축하합니다!");
+                CatchBtn.Enabled = false;
+                return;
+            }
+
+            MoveButton();
+        }
+
+        private void CatchBtn_MouseEnter(object sender, EventArgs e)
+        {
+            missCount++;
+
+            if (missCount >= 5)
+            {
+                MessageBox.Show("Game Over!");
+                CatchBtn.Enabled = false;
+                return;
+            }
+
+            MoveButton();
+        }
+
+        private void MoveButton()
+        {
+            int maxX = this.ClientSize.Width - CatchBtn.Width;
+            int maxY = this.ClientSize.Height - CatchBtn.Height;
+
+            int nextX = rd.Next(0, maxX);
+            int nextY = rd.Next(0, maxY);
+
+            CatchBtn.Location = new Point(nextX, nextY);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            catchCount = 0;
+            missCount = 0;
+
+            CatchBtn.Enabled = true;
+            CatchBtn.Location = new Point(300, 200);
+        }
+    }
+} 오류 발생
